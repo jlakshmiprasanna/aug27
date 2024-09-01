@@ -1,0 +1,65 @@
+body {  
+    background-color: palegoldenrod;
+    margin: 0;  
+    padding: 0;  
+  }  
+.content {  
+    border: 2px solid violet;
+    width: 70px;
+    padding: 20px;  
+    text-align: center; 
+  }
+@media screen and (max-width:450px) {
+    img{
+        width: 100px;
+        border: 2px solid pink;
+        background-color: pink;
+    }
+    .container{
+        width: 300px;
+        background-color: palegreen
+    } 
+}
+@media screen and (min-width:451px) and (max-width:768px) {
+    img{
+        width: 700px;
+        border: 5px solid palegreen;
+        background-color: palegreen;
+        padding: 20px;
+        box-shadow: 2px;
+    } 
+    .container{
+        background-color: pink;
+    }
+}
+@media screen  and (min-width:769px) and (max-width:1440px) {
+    img{
+        width: 40%;
+        transition: all ease-in-out 6s 1s;
+    }
+    img:hover{
+        transition: all ease-in-out 6s 1s;
+        width: 50%;
+        opacity: 0.32;          
+    }
+}
+@media screen and (min-width:1441px) and (max-width:1850px) {
+    .parent{
+        width: 400px;
+        height: 200px;
+        background-color:rgb(70, 36, 36);
+        position: relative;
+        padding-right: 30px;
+    }
+    .parent > img{
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        transition: all ease-in-out 4s 2s;
+    }
+    img:hover{
+        top: 3rem;
+        left: 3rem;
+        transform: scale(0.7,0.7);
+    }
+}
